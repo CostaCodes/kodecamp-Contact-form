@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page-holder {
+    width: 100%;
+    display: flex;
+    padding: 40px;
+}
+
+.form-section {
+    width: 60%;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+.image-section {  
+    width: 40%;
+    background: url(https://res.cloudinary.com/dfryv6mrd/image/upload/v1650448368/big-guy.jpg) no-repeat;
+    background-position: center;
+    color: white;
+    background-size: cover;
+}
+
+.logo-form {
+    padding: 40px;
+    border: 1px;
+    background: url("https://kode.camp/Images/Home/kodecamp_logo.png") no-repeat;
+    background-position: right;
+}
+
+.input-box {
+    width: 48%;
+}
+
+.form-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-top: 20px;
+    
+}
+
+.text-row {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.text-row textarea {
+    width: 100%;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: end;
+    padding: 10px 5px 80px 6px;
+}
+
+.image-section h4 {
+    padding-top: 90%;
+    padding-left: 2%;
+}
+
+h4 {
+    text-align: justify;
+}
+
+
+input[type="button"] {
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px 0;
+}
+
+.button-row {
+    display: flex;
+    justify-content: end;
+    margin-top: 60px;
+    margin-left: 80%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*Mobile-view*/
+@media only screen and (max-width: 767px) {
+    .page-holder {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 40px;
+    }
+    
+    .form-section {
+        width: 100%;
+        padding: 20px;
+        overflow-y: scroll;
+        order: 2;
+    }
+
+    .image-section {
+        width: 95%;
+        margin: 0 auto;
+        order: 1;
+    }
+}
