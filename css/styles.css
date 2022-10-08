@@ -100,7 +100,7 @@ input[type="button"] {
     display: flex;
     justify-content: end;
     margin-top: 60px;
-    margin-left: 80%;
+    margin-left: auto;
 }
 
 ::-webkit-scrollbar {
