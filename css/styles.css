@@ -47,6 +47,7 @@ h1 {
 
 input[type="text"], input[type="email"], input[type="password"], select {
     width: 100%;
+    outline: none;
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 10px;
@@ -68,6 +69,8 @@ input[type="radio"] {
 .text-row textarea {
     width: 100%;
     margin-top: 10px;
+    outline: none;
+    padding: 10px;
 }
 
 h2 {
@@ -110,7 +113,7 @@ input[type="button"] {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 40px;
+        padding: 20px;
     }
     
     .form-section {
@@ -118,6 +121,13 @@ input[type="button"] {
         padding: 20px;
         overflow-y: scroll;
         order: 2;
+    }
+
+    .form-section .button-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
     }
 
     .image-section {
